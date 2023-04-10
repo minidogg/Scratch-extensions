@@ -7,7 +7,13 @@ class SomeBlocks {
     getInfo () {
         return {
             id: 'randomBlocks',
-            name: 'Random Blocks',
+            name: formatMessage({
+                id: 'randomBlocks',
+                defaultMessage: 'Random BLocks',
+                description: 'Random blocks'
+            }),
+            color1: '#FF8C1A',
+            color2: '#DB6E00',
             blocks: [
                 {
                     opcode: 'myReporter',
